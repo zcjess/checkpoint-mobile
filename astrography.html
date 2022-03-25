@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>    
+	  <script src="https://kit.fontawesome.com/7fa0eaec83.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/photo-camera.png">
 	<link rel="stylesheet" href="css/html5reset.css">
@@ -19,6 +21,20 @@
 </head>
 <body>
 	<header>
+		<div class="header">
+			<div class="bar-container">
+   				 <div class="bar" id="myBar"></div>
+  			</div>
+  		</div>
+	  	<script type="text/javascript">
+	  		window.onscroll = function() {myFunction()};
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
 	  <nav>
 		<ul>
 			<li><a href = "index.html">About Me</a></li>
@@ -33,9 +49,9 @@
 	
 
 	<main>
-		<p>I like photography and outdoors. It has been five years since I bought my first camera in Spring 2017. Time flies!</p>
-		<p>I have been to tens of national park, but my favorite is still Hawaii.</p>
-		<img src = "images/star.jpg" alt = "An observatory and stars near my old university" width="200"/>
+		<p>I like photography and the outdoors. It has been five years since I bought my first camera in Spring 2017. Time flies! Astrography is one of my favourite areas of photography. I enjoy outdoors and capturing the beautiful shooting stars, comets, and galaxies. The fantastic thing about astrography is that it leaves abundant space for creativity. With long exposure and photo editing, astrographers can create fantasy scenes which looks much better than what we can observe with our eyes.</p>
+		<p>Astrography requires good preparation and luck. For many times, I was all well prepared, but when I went out, I realized that day was cloudy, which was very frustrating. My favorite astrography photos were taken in an observatory near my old university. Although there was lots of light pollution, I really like the composition of white dome and summer galaxies. My favorite prop is green laser lights, which creates a sci-fi vibe in contrast with night skies.</i></p>
+		<img id="anim" src = "images/star.jpg" alt = "An observatory and stars near my old university" width="200"/>
 
 		<!-- <img src = "wisconsin_dells.jpg" width="25"/>
 		<img src = "badlands.jpg" width="1000"/>
@@ -43,7 +59,8 @@
 		<img src = "jewel_cave.jpg" width="1000"/> -->
 	</main>
 	<footer>
-		<p>Zhanchen Huang &copy; 2022</p>
+		<p>Zhanchen Huang <i class="fa-solid fa-camera"></i> &copy; 2022</p>
+
 	</footer>
 </body>
 </html>

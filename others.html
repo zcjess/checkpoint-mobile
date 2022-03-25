@@ -3,7 +3,9 @@
 <head>
 	<!--  TIP
 	You will find any errors from the head section using the console. -->
-	<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>    
+  <script src="https://kit.fontawesome.com/7fa0eaec83.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/photo-camera.png">
 	<link rel="stylesheet" href="css/html5reset.css">
@@ -21,6 +23,20 @@
 </head>
 <body>
 	<header>
+		<div class="header">
+			<div class="bar-container">
+   				 <div class="bar" id="myBar"></div>
+  			</div>
+  		</div>
+	  	<script type="text/javascript">
+	  		window.onscroll = function() {myFunction()};
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
 		<nav>
 			<ul>
 				<li><a href = "index.html">About Me</a></li>
@@ -37,13 +53,42 @@
 	<main>
 		<img src = "images/lake.jpg" alt = "A lake view from my apartment" width="200"/>
 
-	<p>These photos were taken near my school at illinois, which is located at the center of cornfields. However, its isolation from big cities also makes it close to the nature. We can drives to a beautiful park in 10-20 minutes.</p>
+	<p>This photo was taken from my apartment. I can directly see a lake and some beautiful trees from my balcony. This scene creates a relaxing vibe for me which makes my life significantly easier under such a big workload. This beautiful scene also creates a complete ecosystem for animals such as squirrels, birds, ducks, and gooses. I even see lots of birds resting on my balcony and some squirrels climbing up here as well. </p>
 
-	<p>In summer 2019, we drove to an observatory to observe galaxy and shooting stars. What a good summertime memory!!!</p>
+	<p>Although I do photography mainly during travelling, I often use my cellphone or camera to capture some interesting moments in daily life as well. Recently, most of my photos are about the food I make, which is one main source of satisfaction for me recently. Besides food itself, the lighting and exposure is also critical to make food photos look appealing. Photo editing should never be left out before posting as well.</p>
 	</main>
+<form>
+
+  <fieldset>
+    <h2>Contact Form</h2>
+    <label for="user_name">Your Name</label>
+    <input type="text" name="user_name" id="user_name" placeholder="Enter Your Name">
+
+    
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email">
+
+
+    
+    <label for="number">Your Phone Number</label>
+    <input type="tel" name="number" id="number">
+    <div><span>Format: 123-456-7890</span></div>
+
+
+    <label for="message">Leave A Message</label>
+
+    <textarea id="message"></textarea>
+
+    <label for="submit">Remember me</label>
+    <input type="checkbox" name="checkbox" id="submit"> 
+    
+    
+    <input type="submit" name="submit" value="Submit" >
+  </fieldset>
+ </form>
 
 	<footer>
-		<p>Zhanchen Huang &copy; 2022</p>
+		<p>Zhanchen Huang <i class="fa-solid fa-camera"></i> &copy; 2022</p>
 	</footer>
 </body>
 </html>
