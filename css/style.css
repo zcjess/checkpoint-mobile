@@ -125,6 +125,7 @@ nav li{
 	nav li{
 		display: block;
 		width: 100vw;
+		margin-right: 10px;
 	}
 	.grid {
 		grid-template-columns: 1fr; 
