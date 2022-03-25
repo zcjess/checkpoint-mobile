@@ -44,6 +44,7 @@ h1{
 	background: #ccc;
 }
 .bar {
+	top：0；
 	height:8px;
 	background: #04AA6D;
 	width: 0%;
