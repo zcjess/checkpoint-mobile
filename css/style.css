@@ -124,7 +124,7 @@ nav li{
 @media screen and (max-width: 600px) {
 	nav li{
 		display: block;
-		width: 100vw;
+		width: 100%;
 		margin-right: 10px;
 	}
 	.grid {
